@@ -18,7 +18,7 @@ class _Lab08State extends State<Lab08> {
 
   Uint8List? responseImage;
 
-  Map jsonMap = {'username': 'user1', 'password': 'abcxyz'};
+  Map jsonMap = {'username': 'user1', 'password': 'qwerty'};
 
   _Lab08State() {
     client.badCertificateCallback =
@@ -29,7 +29,7 @@ class _Lab08State extends State<Lab08> {
     MyApp.analytics
         .logEvent(name: 'flutter_labs_get_jwt_token', parameters: null);
     client
-        .postUrl(Uri.parse('https://flutter-jwt-senich.herokuapp.com/auth'))
+        .postUrl(Uri.parse('https://lebedev-labs.herokuapp.com/auth'))
         .then((HttpClientRequest request) {
       request.headers.set('content-type', 'application/json');
       request.add(utf8.encode(json.encode(jsonMap)));
@@ -48,9 +48,9 @@ class _Lab08State extends State<Lab08> {
 
   void getResp() {
     MyApp.analytics
-        .logEvent(name: 'lab09_lab08_get_auth_resp', parameters: null);
+        .logEvent(name: 'flatter_labs_get_auth_resp', parameters: null);
     client
-        .getUrl(Uri.parse('https://flutter-jwt-senich.herokuapp.com/protected'))
+        .getUrl(Uri.parse('https://lebedev-labs.herokuapp.com/'))
         .then((HttpClientRequest request) {
       request.headers.set('Authorization', 'JWT $token');
       return request.close();
@@ -87,7 +87,7 @@ class _Lab08State extends State<Lab08> {
   @override
   Widget build(BuildContext context) {
     MyApp.analytics
-        .logEvent(name: 'lab09_lab08_tab_was_opened', parameters: null);
+        .logEvent(name: 'flatter_labs_lab8_tab_was_opened', parameters: null);
     return SingleChildScrollView(
         child: Column(
       children: [
