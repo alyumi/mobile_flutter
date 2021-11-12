@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "998815598246",
+    "project_id": "labs-lebedev",
+    "storage_bucket": "labs-lebedev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:998815598246:android:a935586a48ae6b5e73d667",
+        "android_client_info": {
+          "package_name": "com.example.lab1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "998815598246-vlpnsgsk7eqevg5igvcsrgehk9vlqi7m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUfY2Qqv7K9Vumja4miYRHZhCp07jo9q8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "998815598246-vlpnsgsk7eqevg5igvcsrgehk9vlqi7m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
